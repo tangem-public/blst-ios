@@ -1,0 +1,802 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D53B3352A73BFCE006A6856 /* libblst.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D53B3322A73BFCE006A6856 /* libblst.a */; };
+		2D53B3362A73BFCE006A6856 /* libblst.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D53B3342A73BFCE006A6856 /* libblst.a */; };
+		2D76299B2A72A5D4004B9023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D76299A2A72A5D4004B9023 /* AppDelegate.swift */; };
+		2D76299D2A72A5D4004B9023 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D76299C2A72A5D4004B9023 /* SceneDelegate.swift */; };
+		2D76299F2A72A5D4004B9023 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D76299E2A72A5D4004B9023 /* ViewController.swift */; };
+		2D7629A22A72A5D4004B9023 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D7629A02A72A5D4004B9023 /* Main.storyboard */; };
+		2D7629A42A72A5D5004B9023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D7629A32A72A5D5004B9023 /* Assets.xcassets */; };
+		2D7629A72A72A5D5004B9023 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D7629A52A72A5D5004B9023 /* LaunchScreen.storyboard */; };
+		2DA950F42A71317700140475 /* Bls_Signature.docc in Sources */ = {isa = PBXBuildFile; fileRef = 2DA950F32A71317700140475 /* Bls_Signature.docc */; };
+		2DA950F52A71317700140475 /* Bls_Signature.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DA950F22A71317700140475 /* Bls_Signature.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DA951122A7131A500140475 /* bls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA950FC2A7131A400140475 /* bls.cpp */; };
+		2DA951132A7131A500140475 /* elements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA950FD2A7131A400140475 /* elements.cpp */; };
+		2DA951142A7131A500140475 /* privatekey.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA950FE2A7131A400140475 /* privatekey.cpp */; };
+		2DA951152A7131A500140475 /* BlsSignature.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2DA950FF2A7131A400140475 /* BlsSignature.mm */; };
+		2DA951182A7131A500140475 /* schemes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA951022A7131A400140475 /* schemes.cpp */; };
+		2DA951192A7131A500140475 /* hdkeys.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2DA951052A7131A500140475 /* hdkeys.hpp */; };
+		2DA9511A2A7131A500140475 /* schemes.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2DA951062A7131A500140475 /* schemes.hpp */; };
+		2DA9511B2A7131A500140475 /* blst.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2DA951082A7131A500140475 /* blst.hpp */; };
+		2DA9511C2A7131A500140475 /* blst_aux.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DA951092A7131A500140475 /* blst_aux.h */; };
+		2DA9511D2A7131A500140475 /* blst.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DA9510A2A7131A500140475 /* blst.h */; };
+		2DA9511E2A7131A500140475 /* util.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2DA9510B2A7131A500140475 /* util.hpp */; };
+		2DA9511F2A7131A500140475 /* bls.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2DA9510C2A7131A500140475 /* bls.hpp */; };
+		2DA951202A7131A500140475 /* elements.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2DA9510D2A7131A500140475 /* elements.hpp */; };
+		2DA951212A7131A500140475 /* hkdf.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2DA9510E2A7131A500140475 /* hkdf.hpp */; };
+		2DA951222A7131A500140475 /* privatekey.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2DA9510F2A7131A500140475 /* privatekey.hpp */; };
+		2DA951232A7131A500140475 /* libblst.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA951112A7131A500140475 /* libblst.a */; };
+		2DCBACDE2A79704600450CD2 /* Bls_Signature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA950EF2A71317700140475 /* Bls_Signature.framework */; };
+		2DCBACDF2A79704600450CD2 /* Bls_Signature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA950EF2A71317700140475 /* Bls_Signature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2DCBACE62A7A43FB00450CD2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2DCBACE52A7A43FB00450CD2 /* README.md */; };
+		2DD6C5DA2A73E51900AE2C15 /* BlsSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD6C5D92A73E51900AE2C15 /* BlsSignature.swift */; };
+		2DD6C5DF2A73EAC600AE2C15 /* BlsSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DA951012A7131A400140475 /* BlsSignature.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2DCBACE02A79704600450CD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DA950E62A71317700140475 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DA950EE2A71317700140475;
+			remoteInfo = "Bls-Signature";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2DCBACE22A79704600450CD2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2DCBACDF2A79704600450CD2 /* Bls_Signature.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2D53B3322A73BFCE006A6856 /* libblst.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libblst.a; sourceTree = "<group>"; };
+		2D53B3342A73BFCE006A6856 /* libblst.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libblst.a; sourceTree = "<group>"; };
+		2D53B3372A73C759006A6856 /* Bls_Signature_iOS.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Bls_Signature_iOS.xcframework; path = archives/Bls_Signature_iOS.xcframework; sourceTree = "<group>"; };
+		2D7629982A72A5D4004B9023 /* Bls-SignatureExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bls-SignatureExample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D76299A2A72A5D4004B9023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D76299C2A72A5D4004B9023 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2D76299E2A72A5D4004B9023 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2D7629A12A72A5D4004B9023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D7629A32A72A5D5004B9023 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D7629A62A72A5D5004B9023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D7629A82A72A5D5004B9023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D7629B32A72A861004B9023 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		2DA950EF2A71317700140475 /* Bls_Signature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bls_Signature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA950F22A71317700140475 /* Bls_Signature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bls_Signature.h; sourceTree = "<group>"; };
+		2DA950F32A71317700140475 /* Bls_Signature.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Bls_Signature.docc; sourceTree = "<group>"; };
+		2DA950FC2A7131A400140475 /* bls.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bls.cpp; sourceTree = "<group>"; };
+		2DA950FD2A7131A400140475 /* elements.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = elements.cpp; sourceTree = "<group>"; };
+		2DA950FE2A7131A400140475 /* privatekey.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = privatekey.cpp; sourceTree = "<group>"; };
+		2DA950FF2A7131A400140475 /* BlsSignature.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BlsSignature.mm; sourceTree = "<group>"; };
+		2DA951012A7131A400140475 /* BlsSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlsSignature.h; sourceTree = "<group>"; };
+		2DA951022A7131A400140475 /* schemes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = schemes.cpp; sourceTree = "<group>"; };
+		2DA951052A7131A500140475 /* hdkeys.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = hdkeys.hpp; sourceTree = "<group>"; };
+		2DA951062A7131A500140475 /* schemes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = schemes.hpp; sourceTree = "<group>"; };
+		2DA951082A7131A500140475 /* blst.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = blst.hpp; sourceTree = "<group>"; };
+		2DA951092A7131A500140475 /* blst_aux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blst_aux.h; sourceTree = "<group>"; };
+		2DA9510A2A7131A500140475 /* blst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blst.h; sourceTree = "<group>"; };
+		2DA9510B2A7131A500140475 /* util.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = util.hpp; sourceTree = "<group>"; };
+		2DA9510C2A7131A500140475 /* bls.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bls.hpp; sourceTree = "<group>"; };
+		2DA9510D2A7131A500140475 /* elements.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = elements.hpp; sourceTree = "<group>"; };
+		2DA9510E2A7131A500140475 /* hkdf.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = hkdf.hpp; sourceTree = "<group>"; };
+		2DA9510F2A7131A500140475 /* privatekey.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = privatekey.hpp; sourceTree = "<group>"; };
+		2DA951112A7131A500140475 /* libblst.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libblst.a; sourceTree = "<group>"; };
+		2DA9512B2A71424C00140475 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		2DCBACE52A7A43FB00450CD2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2DD6C5D92A73E51900AE2C15 /* BlsSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlsSignature.swift; sourceTree = "<group>"; };
+		2DD6C5E72A73FE4D00AE2C15 /* BlsSignature.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = BlsSignature.xcframework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D7629952A72A5D4004B9023 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DCBACDE2A79704600450CD2 /* Bls_Signature.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA950EC2A71317700140475 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D53B3352A73BFCE006A6856 /* libblst.a in Frameworks */,
+				2DA951232A7131A500140475 /* libblst.a in Frameworks */,
+				2D53B3362A73BFCE006A6856 /* libblst.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D53B3312A73BFCE006A6856 /* arm64 */ = {
+			isa = PBXGroup;
+			children = (
+				2D53B3322A73BFCE006A6856 /* libblst.a */,
+			);
+			path = arm64;
+			sourceTree = "<group>";
+		};
+		2D53B3332A73BFCE006A6856 /* x86_64 */ = {
+			isa = PBXGroup;
+			children = (
+				2D53B3342A73BFCE006A6856 /* libblst.a */,
+			);
+			path = x86_64;
+			sourceTree = "<group>";
+		};
+		2D7629992A72A5D4004B9023 /* Bls-SignatureExample */ = {
+			isa = PBXGroup;
+			children = (
+				2D76299A2A72A5D4004B9023 /* AppDelegate.swift */,
+				2D76299C2A72A5D4004B9023 /* SceneDelegate.swift */,
+				2D76299E2A72A5D4004B9023 /* ViewController.swift */,
+				2D7629A02A72A5D4004B9023 /* Main.storyboard */,
+				2D7629A32A72A5D5004B9023 /* Assets.xcassets */,
+				2D7629A52A72A5D5004B9023 /* LaunchScreen.storyboard */,
+				2D7629A82A72A5D5004B9023 /* Info.plist */,
+			);
+			path = "Bls-SignatureExample";
+			sourceTree = "<group>";
+		};
+		2DA950E52A71317700140475 = {
+			isa = PBXGroup;
+			children = (
+				2DCBACE52A7A43FB00450CD2 /* README.md */,
+				2DA950F12A71317700140475 /* Bls-Signature */,
+				2D7629992A72A5D4004B9023 /* Bls-SignatureExample */,
+				2DA950F02A71317700140475 /* Products */,
+				2DA9512A2A71424C00140475 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2DA950F02A71317700140475 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DA950EF2A71317700140475 /* Bls_Signature.framework */,
+				2D7629982A72A5D4004B9023 /* Bls-SignatureExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DA950F12A71317700140475 /* Bls-Signature */ = {
+			isa = PBXGroup;
+			children = (
+				2DA950FB2A7131A400140475 /* Classes */,
+				2DA951032A7131A500140475 /* Libraries */,
+				2DA950F22A71317700140475 /* Bls_Signature.h */,
+				2DA950F32A71317700140475 /* Bls_Signature.docc */,
+			);
+			path = "Bls-Signature";
+			sourceTree = "<group>";
+		};
+		2DA950FB2A7131A400140475 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2DA950FF2A7131A400140475 /* BlsSignature.mm */,
+				2DA951012A7131A400140475 /* BlsSignature.h */,
+				2DD6C5D92A73E51900AE2C15 /* BlsSignature.swift */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		2DA951032A7131A500140475 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				2DA951042A7131A500140475 /* include */,
+				2DA951102A7131A500140475 /* lib */,
+			);
+			path = Libraries;
+			sourceTree = SOURCE_ROOT;
+		};
+		2DA951042A7131A500140475 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				2DA950FC2A7131A400140475 /* bls.cpp */,
+				2DA950FD2A7131A400140475 /* elements.cpp */,
+				2DA950FE2A7131A400140475 /* privatekey.cpp */,
+				2DA951022A7131A400140475 /* schemes.cpp */,
+				2DA951052A7131A500140475 /* hdkeys.hpp */,
+				2DA951062A7131A500140475 /* schemes.hpp */,
+				2DA951072A7131A500140475 /* bindings */,
+				2DA9510B2A7131A500140475 /* util.hpp */,
+				2DA9510C2A7131A500140475 /* bls.hpp */,
+				2DA9510D2A7131A500140475 /* elements.hpp */,
+				2DA9510E2A7131A500140475 /* hkdf.hpp */,
+				2DA9510F2A7131A500140475 /* privatekey.hpp */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		2DA951072A7131A500140475 /* bindings */ = {
+			isa = PBXGroup;
+			children = (
+				2DA951082A7131A500140475 /* blst.hpp */,
+				2DA951092A7131A500140475 /* blst_aux.h */,
+				2DA9510A2A7131A500140475 /* blst.h */,
+			);
+			path = bindings;
+			sourceTree = "<group>";
+		};
+		2DA951102A7131A500140475 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				2DA951272A7132A400140475 /* iphone-simulator */,
+				2DA951262A71329000140475 /* iphoneos */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		2DA951262A71329000140475 /* iphoneos */ = {
+			isa = PBXGroup;
+			children = (
+				2DA951112A7131A500140475 /* libblst.a */,
+			);
+			path = iphoneos;
+			sourceTree = "<group>";
+		};
+		2DA951272A7132A400140475 /* iphone-simulator */ = {
+			isa = PBXGroup;
+			children = (
+				2D53B3312A73BFCE006A6856 /* arm64 */,
+				2D53B3332A73BFCE006A6856 /* x86_64 */,
+			);
+			path = "iphone-simulator";
+			sourceTree = "<group>";
+		};
+		2DA9512A2A71424C00140475 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DD6C5E72A73FE4D00AE2C15 /* BlsSignature.xcframework */,
+				2D53B3372A73C759006A6856 /* Bls_Signature_iOS.xcframework */,
+				2D7629B32A72A861004B9023 /* libc++.tbd */,
+				2DA9512B2A71424C00140475 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2DA950EA2A71317700140475 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA951202A7131A500140475 /* elements.hpp in Headers */,
+				2DA9511D2A7131A500140475 /* blst.h in Headers */,
+				2DA9511A2A7131A500140475 /* schemes.hpp in Headers */,
+				2DA951222A7131A500140475 /* privatekey.hpp in Headers */,
+				2DA9511F2A7131A500140475 /* bls.hpp in Headers */,
+				2DA9511C2A7131A500140475 /* blst_aux.h in Headers */,
+				2DA9511E2A7131A500140475 /* util.hpp in Headers */,
+				2DA950F52A71317700140475 /* Bls_Signature.h in Headers */,
+				2DA9511B2A7131A500140475 /* blst.hpp in Headers */,
+				2DA951212A7131A500140475 /* hkdf.hpp in Headers */,
+				2DA951192A7131A500140475 /* hdkeys.hpp in Headers */,
+				2DD6C5DF2A73EAC600AE2C15 /* BlsSignature.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2D7629972A72A5D4004B9023 /* Bls-SignatureExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D7629AB2A72A5D5004B9023 /* Build configuration list for PBXNativeTarget "Bls-SignatureExample" */;
+			buildPhases = (
+				2D7629942A72A5D4004B9023 /* Sources */,
+				2D7629952A72A5D4004B9023 /* Frameworks */,
+				2D7629962A72A5D4004B9023 /* Resources */,
+				2DCBACE22A79704600450CD2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DCBACE12A79704600450CD2 /* PBXTargetDependency */,
+			);
+			name = "Bls-SignatureExample";
+			productName = "Bls-SignatureExample";
+			productReference = 2D7629982A72A5D4004B9023 /* Bls-SignatureExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2DA950EE2A71317700140475 /* Bls-Signature */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DA950F82A71317700140475 /* Build configuration list for PBXNativeTarget "Bls-Signature" */;
+			buildPhases = (
+				2DA950EA2A71317700140475 /* Headers */,
+				2DA950EB2A71317700140475 /* Sources */,
+				2DA950EC2A71317700140475 /* Frameworks */,
+				2DA950ED2A71317700140475 /* Resources */,
+				2D7629BB2A73BAC3004B9023 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bls-Signature";
+			productName = "Bls-Signature";
+			productReference = 2DA950EF2A71317700140475 /* Bls_Signature.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DA950E62A71317700140475 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2D7629972A72A5D4004B9023 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					2DA950EE2A71317700140475 = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
+					};
+				};
+			};
+			buildConfigurationList = 2DA950E92A71317700140475 /* Build configuration list for PBXProject "Bls-Signature" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DA950E52A71317700140475;
+			productRefGroup = 2DA950F02A71317700140475 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DA950EE2A71317700140475 /* Bls-Signature */,
+				2D7629972A72A5D4004B9023 /* Bls-SignatureExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D7629962A72A5D4004B9023 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D7629A72A72A5D5004B9023 /* LaunchScreen.storyboard in Resources */,
+				2D7629A42A72A5D5004B9023 /* Assets.xcassets in Resources */,
+				2D7629A22A72A5D4004B9023 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA950ED2A71317700140475 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DCBACE62A7A43FB00450CD2 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D7629BB2A73BAC3004B9023 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D7629942A72A5D4004B9023 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D76299F2A72A5D4004B9023 /* ViewController.swift in Sources */,
+				2D76299B2A72A5D4004B9023 /* AppDelegate.swift in Sources */,
+				2D76299D2A72A5D4004B9023 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA950EB2A71317700140475 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DD6C5DA2A73E51900AE2C15 /* BlsSignature.swift in Sources */,
+				2DA951132A7131A500140475 /* elements.cpp in Sources */,
+				2DA950F42A71317700140475 /* Bls_Signature.docc in Sources */,
+				2DA951182A7131A500140475 /* schemes.cpp in Sources */,
+				2DA951122A7131A500140475 /* bls.cpp in Sources */,
+				2DA951142A7131A500140475 /* privatekey.cpp in Sources */,
+				2DA951152A7131A500140475 /* BlsSignature.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2DCBACE12A79704600450CD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DA950EE2A71317700140475 /* Bls-Signature */;
+			targetProxy = 2DCBACE02A79704600450CD2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D7629A02A72A5D4004B9023 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D7629A12A72A5D4004B9023 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2D7629A52A72A5D5004B9023 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D7629A62A72A5D5004B9023 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D7629A92A72A5D5004B9023 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NLR9V96NZ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bls-SignatureExample/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tangem.Bls-SignatureExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D7629AA2A72A5D5004B9023 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NLR9V96NZ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bls-SignatureExample/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tangem.Bls-SignatureExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2DA950F62A71317700140475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2DA950F72A71317700140475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2DA950F92A71317700140475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4897UJ6D8C;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphoneos*]" = (
+					"$(PROJECT_DIR)/Libraries/lib/iphone-simulator/arm64/libblst.a",
+					"$(PROJECT_DIR)/Libraries/lib/iphone-simulator/x86_64/libblst.a",
+				);
+				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphoneos*][arch=arm64]" = "$(PROJECT_DIR)/Libraries/lib/iphoneos/libblst.a";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Libraries/lib/iphone-simulator",
+					"$(PROJECT_DIR)/Libraries/lib/iphone-simulator/arm64",
+					"$(PROJECT_DIR)/Libraries/lib/iphone-simulator/x86_64",
+				);
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = "$(PROJECT_DIR)/Libraries/lib/iphoneos";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*][arch=arm64]" = "$(PROJECT_DIR)/Libraries/lib/iphone-simulator/arm64";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*][arch=x86_64]" = "$(PROJECT_DIR)/Libraries/lib/iphone-simulator/x86_64";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tangem.bls-ios";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2DA950FA2A71317700140475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4897UJ6D8C;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				"EXCLUDED_SOURCE_FILE_NAMES[arch=arm64]" = "$(PROJECT_DIR)/Libraries/lib/iphoneos/libblst.a";
+				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphoneos*]" = (
+					"$(PROJECT_DIR)/Libraries/lib/iphone-simulator/arm64/libblst.a",
+					"$(PROJECT_DIR)/Libraries/lib/iphone-simulator/x86_64/libblst.a",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Libraries/lib",
+					"$(PROJECT_DIR)/Libraries/lib/iphone-simulator",
+					"$(PROJECT_DIR)/Libraries/lib/iphone-simulator/arm64",
+					"$(PROJECT_DIR)/Libraries/lib/iphone-simulator/x86_64",
+				);
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = "$(PROJECT_DIR)/Libraries/lib/iphoneos";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*][arch=arm64]" = "$(PROJECT_DIR)/Libraries/lib/iphone-simulator/arm64";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*][arch=x86_64]" = (
+					"$(PROJECT_DIR)/Libraries/lib",
+					"$(PROJECT_DIR)/Libraries/lib/iphone-simulator",
+					"$(PROJECT_DIR)/Libraries/lib/iphone-simulator/x86_64",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tangem.bls-ios";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D7629AB2A72A5D5004B9023 /* Build configuration list for PBXNativeTarget "Bls-SignatureExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D7629A92A72A5D5004B9023 /* Debug */,
+				2D7629AA2A72A5D5004B9023 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DA950E92A71317700140475 /* Build configuration list for PBXProject "Bls-Signature" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA950F62A71317700140475 /* Debug */,
+				2DA950F72A71317700140475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DA950F82A71317700140475 /* Build configuration list for PBXNativeTarget "Bls-Signature" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA950F92A71317700140475 /* Debug */,
+				2DA950FA2A71317700140475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DA950E62A71317700140475 /* Project object */;
+}
